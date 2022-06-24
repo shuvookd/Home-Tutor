@@ -1,37 +1,33 @@
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import About from './Pages/About/About';
-import Checkout from './Pages/Checkout/Checkout/Checkout';
-import Home from './Pages/Home/Home/Home';
-import Login from './Pages/Login/Login/Login';
-import Register from './Pages/Login/Register/Register';
-import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
-import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
-import Footer from './Pages/Shared/Footer/Footer';
-import Header from './Pages/Shared/Header/Header';
-import NotFound from './Pages/Shared/NotFound/NotFound';
+import React, { useEffect, useState } from 'react';
+import Service from '../Service/Service';
+import './Services.css';
 
-function App() {
-  return (
-    <div>
-      <Header></Header>
-      <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/home" element={<Home></Home>}></Route>
-        <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
-        <Route path="/about" element={<About></About>}></Route>
-        <Route path="/login" element={<Login></Login>}></Route>
-        <Route path="/register" element={<Register></Register>}></Route>
-        <Route path="/checkout" element={
-          <RequireAuth>
-            <Checkout></Checkout>
-          </RequireAuth>
-        }></Route>
-        <Route path="*" element={<NotFound></NotFound>}></Route>
-      </Routes>
-      <Footer></Footer>
-    </div>
-  );
-}
+const Services = () => {
 
-export default App;
+    const [services, setServices] = useState([]);
+
+    useEffect( ()=>{
+        fetch('services.json')
+        .then(res => res.json())
+        .then(data => setServices(data));
+    }, [])
+
+    return (
+        <div id="services" className='container'>
+            <div className="row">
+            <h1 className='text-primary text-center mt-5'> Our Services</h1>
+            <div className="services-container">
+            {
+                services.map(service => <Service
+                    key={service.id}
+                    service={service}
+                >
+                </Service>)
+            }
+            </div>
+            </div>
+        </div>
+    );
+};
+
+export default Services;
