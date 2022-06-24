@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Physics",
+        "price": "3000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/Sx8kMMc/Physics.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Chemistry",
+        "price": "1000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/PmrpR6q/Chemistry.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Math",
+        "price": "1500",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/M9B2SvG/Math.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Biology",
+        "price": "2000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/Yb6rRZ4/Biology.jpg"
+    },
+    {
+        "id": 5,
+        "name": "English",
+        "price": "1000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/RgJn28y/English.jpg"
+    },
+    {
+        "id": 6,
+        "name": "ICT",
+        "price": "1000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/18mWCBR/ICT.jpg"
+    }
+]
+
+
+
+
+
+
